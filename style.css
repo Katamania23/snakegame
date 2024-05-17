@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --text: hsl(0, 0%, 99%);
+  --background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  --primary: hsl(155, 100%, 65%);
+  --secondary: hsl(156, 51%, 14%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--background);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--primary);
+  margin: 1rem 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  color: var(--primary);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.header-section {
+  text-align: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.header-images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.header-images img {
+  width: 200px; /* Aangepast naar 200px */
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.header-images img:hover {
+  transform: scale(1.1);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.content-container:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.content-container img {
+  width: 200px; /* Aangepast naar 200px */
+  height: auto;
+  border-radius: 10px;
+  margin: 0 1rem;
+}
+
+.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.center-content img {
+  width: 200px; /* Aangepast naar 200px */
+  height: auto;
+  border-radius: 10px;
+  margin: 0 1rem;
+}
+
+article {
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+  .content-container, .center-content {
+    flex-direction: column;
+  }
+
+  .content-container img, .center-content img {
+    margin: 1rem 0;
+  }
+}
+
+ 
